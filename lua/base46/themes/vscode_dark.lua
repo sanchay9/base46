@@ -47,10 +47,10 @@ M.base_16 = {
   base05 = "#D4D4D4",
   base06 = "#E9E9E9",
   base07 = "#FFFFFF",
-  base08 = "#D16969",
+  base08 = "#9CDCFE",
   base09 = "#B5CEA8",
-  base0A = "#D7BA7D",
-  base0B = "#BD8D78",
+  base0A = "#60a6e0",
+  base0B = "#c79782",
   base0C = "#9CDCFE",
   base0D = "#DCDCAA",
   base0E = "#C586C0",
@@ -58,12 +58,18 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  ["@parameter"] = { fg = M.base_30.blue },
+  ["@field"] = { fg = M.base_30.green1 },
+  ["@parameter"] = { fg = M.base_30.cyan },
   ["@keyword"] = { fg = M.base_30.blue },
   ["@variable"] = { fg = M.base_30.cyan },
-  ["@field.key"] = { fg = M.base_30.green1 },
-  ["@keyword.return"] = { fg = M.base_16.base0E },
-  ["@keyword.function"] = { fg = M.base_30.teal },
+  ["@field.key"] = { fg = M.base_30.cyan },
+  ["@keywordreturn"] = { fg = M.base_16.base0E },
+  ["@keywordfunction"] = { fg = M.base_30.teal },
+  ["@type.builtin"] = { fg = M.base_30.green1 },
+  ["@constant.builtin"] = { fg = M.base_30.blue },
+
+  Include = { fg = M.base_30.purple },
+  Constant = { fg = M.base_30.cyan },
 }
 
 M.type = "dark"
